@@ -4,7 +4,16 @@
     function add_typekit() {
         echo '<script type="text/javascript" src="//use.typekit.net/rhk6igh.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
     }
-    add_action('wp_footer', 'add_typekit');
+    add_action('wp_head', 'add_typekit');
+    
+    // remove menu walker filter for UberMenu plugin
+    remove_filter('nav_menu_css_class', 'roots_nav_menu_css_class', 10, 2);
+    
+    function add_font_awesome() {
+        wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+        wp_enqueue_style('font-awesome');
+    }
+    add_action('wp_head', 'add_font_awesome');
     
     function get_country(){
         if (!isset($country)) {

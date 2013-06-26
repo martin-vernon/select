@@ -1,4 +1,8 @@
 jQuery(function ($) {
+    
+    /* ==========================================================================
+       Simple Modal Customisations
+       ========================================================================== */
     var OSX = {
         container: null,
         init: function () {
@@ -189,4 +193,21 @@ jQuery(function ($) {
        $(this).removeClass('error');
        $(this).val('');
     });
+    
+    /* ==========================================================================
+       UberMenu Custom
+       ========================================================================== */
+    $( '#megaMenu li.mega-with-sub > a, #megaMenu li.mega-with-sub > span.um-anchoremulator' ).on('click', function(e){
+        var subMenu = $( this ).parent().find('ul.sub-menu');
+        if( !subMenu.is(':animated') && subMenu.is(':visible') ){
+            subMenu.hide();
+        }else{
+            subMenu.slideDown();
+        }
+    });
+    
+    $( '.navbar-inner #megaMenu .menu-tabs img' ).hover( function(e){
+       $( this ).parent().parent().find('a').toggleClass("hovered"); 
+    });
+    
 });

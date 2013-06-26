@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>BootstrapPress - Help file</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+    <!-- Le JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" onload="prettyPrint()">
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+    <div class="container">
+        <h1>Bootstrap Press</h1>
+
+        <p class="lead">Help file.</p>
+    </div>
+</header>
+
+
+<div class="container">
+<div class="row">
+<div class="span3 bs-docs-sidebar">
+    <ul class="nav nav-list">
+        <li class="nav-header">Getting Started</li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#pro_version">Pro Version</a></li>
+        <li class="nav-header">Shortcodes</li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#components">Components</a></li>
+        <li class="nav-header">About Us</li>
+        <li><a href="#developers">The Developers</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#custom_development">Custom Development</a></li>
+    </ul>
+</div>
+<div class="span9">
+<div class="page-header">
+    <h2>Getting Started
+        <small>Getting started with Bootstrap Press</small>
+    </h2>
+</div>
+<div class="page-header">
+    <h3>Introduction</h3>
+</div>
+<section id="introduction">
+    <p>
+        Bootstrap Press offers Twitter Bootstrap styles with WordPress Shortcodes. The aim is to make adding elements
+        such as Tabs, Grid, Buttons...) to your WordPress blog as simple as possible.
+    </p>
+</section>
+<div class="page-header">
+    <h3>Installation</h3>
+</div>
+<section id="installation">
+    <p>
+        Just upload the plugin and activate it. Bootstrap Press requires WordPress 3.5, but the latest version is always
+        recommended.
+    </p>
+</section>
+<div class="page-header">
+    <h3>Usage</h3>
+</div>
+<section id="usage">
+    <p>
+        You can use the Twitter Bootstrap HTML Code directly or the provided the Shortcodes. The Shortcodes are provided
+        for ease
+        of use especially if you are in the WordPress editor. For more information
+        about <a href="http://codex.wordpress.org/Shortcode">Shortcodes</a>.
+    </p>
+</section>
+<div class="page-header">
+    <h3>Pro Version</h3>
+</div>
+<section id="pro_version">
+    <p>
+        We are working on a Premium version which will provide a handful of features.
+    </p>
+    <ul>
+        <li>Visual Shortcodes Editor</li>
+        <li>More Advanced Shortcodes (Slider, Google Maps, Syntax Highlighter...)</li>
+        <li>Customizable Bootstrap Theme</li>
+        <li>Priority Support</li>
+    </ul>
+    <p>You can sign-up for our announcement newsletter in our <a href="http://costartpress.com">BootstrapPress</a>
+        site to get notified when the Premium version
+        is launched</p>
+</section>
+<div class="page-header">
+    <h2>ShortCodes
+        <small>Usage of the different shortcodes</small>
+    </h2>
+</div>
+<div class="page-header">
+    <h3>Typography</h3>
+</div>
+<section id="typography">
+<h4>Hero Unit</h4>
+
+<div>
+    <p>A lightweight, flexible component to showcase key content on your site. It works well on
+        marketing and content-heavy sites.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_hero_unit]
+        ... Put content here
+    [/bs_hero_unit]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs hero-unit"&gt;
+        ... Put content here
+    &lt;/div&gt;
+</pre>
+</div>
+
+<h4>Page Header</h4>
+
+<div>
+    <p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It
+        can utilize the h1's default small, element as well most other components (with additional
+        styles).</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_page_header]
+        ... Put content here
+    [/bs_hero_unit]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs page-header"&gt;
+        ... Put content here
+    &lt;/div&gt;
+</pre>
+</div>
+
+<h4>Well</h4>
+
+<div>
+    <p>Use the well as a simple effect on an element to give it an inset effect.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_well size=""]
+        ... Put content here
+    [/bs_well]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>size</strong> null, small, large</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs well"&gt;
+        ... Put content here
+    &lt;/div&gt;
+</pre>
+</div>
+
+<h4>Headlines</h4>
+
+<div>
+    <p>All HTML headings, h1 through h6 are available.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_h1]h1. Heading 1[/bs_h1]
+    [bs_h2]h2. Heading 2[/bs_h2]
+    [bs_h3]h3. Heading 3[/bs_h3]
+    [bs_h4]h4. Heading 4[/bs_h4]
+    [bs_h5]h5. Heading 5[/bs_h5]
+    [bs_h6]h6. Heading 6[/bs_h6]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;h1 class="twitter_bs"&gt;h1. Header 1&lt;h1&gt;
+    &lt;h2 class="twitter_bs"&gt;h2. Header 2&lt;h2&gt;
+    &lt;h3 class="twitter_bs"&gt;h3. Header 3&lt;h3&gt;
+    &lt;h4 class="twitter_bs"&gt;h4. Header 4&lt;h4&gt;
+    &lt;h5 class="twitter_bs"&gt;h5. Header 5&lt;h5&gt;
+    &lt;h6 class="twitter_bs"&gt;h6. Header 6&lt;h6&gt;
+</pre>
+</div>
+
+<h4>Paragraph</h4>
+
+<div>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_p type="" color=""]
+        .. Put content here
+    [/bs_p]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>Type</strong> null, lead</li>
+        <li><strong>Color</strong> null, muted, text-warning, text-error, text-info, text-success</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;p class="twitter_bs"&gt;
+        .. Put Content here
+    &lt;/p&gt;
+</pre>
+</div>
+
+<h4>Emphasis</h4>
+
+<div>
+    <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_small]Highlighted Content[/bs_small]
+    [bs_bold]Highlighted Content[/bs_bold]
+    [bs_italic]Highlighted Content[/bs_italic]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;small class="twitter_bs"&gt;Highlighted Content&lt;small&gt;
+    &lt;bold class="twitter_bs"&gt;Highlighted Content&lt;bold&gt;
+    &lt;italic class="twitter_bs"&gt;Highlighted Content&lt;italic&gt;
+</pre>
+</div>
+
+<h4>Abbreviations</h4>
+
+<div>
+    <p>Stylized implementation of HTML's abbr element for abbreviations and acronyms to show the expanded version on
+        hover. Abbreviations with a title attribute have a light dotted bottom border and a help cursor on hover,
+        providing additional context on hover.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_abbr title="HyperText Markup Language" type=""]HTML[/bs_abbr]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>Title</strong> User input</li>
+        <li><strong>Type</strong> null, initialism</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;abbr class="twitter_bs" title="HyperText Markup Language"&gt;HTML&lt;abbr&gt;
+</pre>
+</div>
+
+<h4>Blockquotes</h4>
+
+<div>
+    <p>For quoting blocks of content from another source within your document.</p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_blockquote display=""]
+        ... Put content here
+    [/bs_blockquote]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>Display</strong> null, pull-right</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;blockquote class="twitter_bs"&gt;
+        ... Put content here
+    &lt;blockquote&gt;
+</pre>
+</div>
+
+<h4>Icons</h4>
+
+<div>
+    <p>140 icons in sprite form, available in dark gray (default) and white, provided by <a
+            href="http://twitter.github.com/bootstrap/base-css.html#icons">Glyphicons.</a></p>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_icon icon="search" color=""]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>Icon</strong> 140 icons, find them <a
+                href="http://twitter.github.com/bootstrap/base-css.html#icons">here</a> and remove icon-
+        </li>
+        <li><strong>Color</strong> null, white</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;i class="twitter_bs icon-search"&gt;&lt;/i&gt;
+</pre>
+</div>
+
+<h4>Labels</h4>
+
+<div>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_label_default]Default[/bs_label_default]
+    [bs_label_success]Success[/bs_label_success]
+    [bs_label_warning]Warning[/bs_label_warning]
+    [bs_label_important]Important[/bs_label_important]
+    [bs_label_info]Info[/bs_label_info]
+    [bs_label_inverse]Inverse[/bs_label_inverse]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;span class="twitter_bs label"&gt;Default&lt;span&gt;
+    &lt;span class="twitter_bs label label-success"&gt;Success&lt;span&gt;
+    &lt;span class="twitter_bs label label-warning"&gt;Warning&lt;span&gt;
+    &lt;span class="twitter_bs label label-important"&gt;Important&lt;span&gt;
+    &lt;span class="twitter_bs label label-info"&gt;Info&lt;span&gt;
+    &lt;span class="twitter_bs label label-inverse"&gt;Inverse&lt;span&gt;
+</pre>
+</div>
+
+<h4>Badges</h4>
+
+<div>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_badge_default]Default[/bs_badge_default]
+    [bs_badge_success]Success[/bs_badge_success]
+    [bs_badge_warning]Warning[/bs_badge_warning]
+    [bs_badge_important]Important[/bs_badge_important]
+    [bs_badge_info]Info[/bs_badge_info]
+    [bs_badge_inverse]Inverse[/bs_badge_inverse]
+</pre>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;span class="twitter_bs badge"&gt;Default&lt;span&gt;
+    &lt;span class="twitter_bs badge badge-success"&gt;Success&lt;span&gt;
+    &lt;span class="twitter_bs badge badge-warning"&gt;Warning&lt;span&gt;
+    &lt;span class="twitter_bs badge badge-important"&gt;Important&lt;span&gt;
+    &lt;span class="twitter_bs badge badge-info"&gt;Info&lt;span&gt;
+    &lt;span class="twitter_bs badge badge-inverse"&gt;Inverse&lt;span&gt;
+</pre>
+</div>
+<h4>Buttons</h4>
+
+<div>
+    <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_button href="#" type="" size="" state=""]Button Text[/bs_button]
+</pre>
+    <h6>Attributes</h6>
+    <ul>
+        <li><strong>href</strong> User input</li>
+        <li><strong>type</strong> null, primary, info, success, warning, danger, inverse, link</li>
+        <li><strong>size</strong> null, large, small, mini</li>
+        <li><strong>state</strong> null, disabled</li>
+    </ul>
+    <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;a href="#" class="twitter_bs btn"&gt;Button Text&lt;/a&gt;
+</pre>
+</div>
+</section>
+<div class="page-header">
+    <h3>Tables</h3>
+</div>
+<section id="tables">
+    <h4>Table Element</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_table strip="" border="" highlight="" size=""]
+        ... Table content here
+    [/bs_table]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Strip</strong> null, striped</li>
+            <li><strong>Border</strong> null, bordered</li>
+            <li><strong>Highlight</strong> null, hover</li>
+            <li><strong>Size</strong> null, condensed</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;table class="twitter_bs table"&gt;
+        ... Table content here
+    &lt;/table&gt;
+</pre>
+    </div>
+    <h4>Table Header</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_head]
+        ... Table header content
+    [/bs_head]
+</pre>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;thead class="twitter_bs"&gt;
+        ... Table header content
+    &lt;/thead&gt;
+</pre>
+    </div>
+    <h4>Table Body</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_head]
+        ... Table body content
+    [/bs_head]
+</pre>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;tbody class="twitter_bs"&gt;
+        ... Table body content
+    &lt;/tbody&gt;
+</pre>
+    </div>
+    <h4>Table Row</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_row type=""]
+        ... Row content here
+    [/bs_row]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Type</strong> null, success, error, warning, info</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;tr class="twitter_bs"&gt;
+        ... Row content here
+    &lt;/tr&gt;
+</pre>
+    </div>
+    <h4>Table Cell</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_cell]
+       ... Cell content here
+    [/bs_cell]
+</pre>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;td class="twitter_bs"&gt;
+        ... Table content here
+    &lt;/td&gt;
+</pre>
+    </div>
+    <h4>Overall</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_table]
+        [bs_head]
+            [bs_row]
+                [bs_cell]First Name[/bs_cell]
+                [bs_cell]Last Name[/bs_cell]
+                [bs_cell]User Name[/bs_cell]
+            [bs_row]
+        [/bs_head]
+        [bs_body]
+            [bs_row]
+                [bs_cell]Mark[/bs_cell]
+                [bs_cell]Otto[/bs_cell]
+                [bs_cell]@mdo[/bs_cell]
+            [/bs_row]
+            [bs_row]
+                [bs_cell]Jacob[/bs_cell]
+                [bs_cell]Thornton[/bs_cell]
+                [bs_cell]@fat[/bs_cell]
+            [/bs_row]
+            [bs_row]
+                [bs_cell]Larry[/bs_cell]
+                [bs_cell]The Bird[/bs_cell]
+                [bs_cell]@twitter[/bs_cell]
+            [/bs_row]
+        [/bs_body]
+    [/bs_table]
+</pre>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;table class="twitter_bs table    "&gt;
+        &lt;thead&gt;&lt;br /&gt;
+        &lt;tr class=""&gt;&lt;/tr&gt;&lt;br /&gt;
+        &lt;td&gt;First Name&lt;/td&gt;&lt;br /&gt;
+        &lt;td&gt;Last Name&lt;/td&gt;&lt;br /&gt;
+        &lt;td&gt;User Name&lt;/td&gt;&lt;br /&gt;
+        &lt;tr class=""&gt;&lt;/tr&gt;&lt;br /&gt;
+        &lt;/thead&gt;&lt;br /&gt;
+        &lt;tbody&gt;&lt;br /&gt;
+        &lt;tr class=""&gt;&lt;br /&gt;
+            &lt;td&gt;Mark&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;Otto&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;@mdo&lt;/td&gt;&lt;br /&gt;
+        &lt;/tr&gt;&lt;br /&gt;
+        &lt;tr class=""&gt;&lt;br /&gt;
+            &lt;td&gt;Jacob&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;Thornton&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;@fat&lt;/td&gt;&lt;br /&gt;
+        &lt;/tr&gt;&lt;br /&gt;
+        &lt;tr class=""&gt;&lt;br /&gt;
+            &lt;td&gt;Larry&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;The Bird&lt;/td&gt;&lt;br /&gt;
+            &lt;td&gt;@twitter&lt;/td&gt;&lt;br /&gt;
+        &lt;/tr&gt;&lt;br /&gt;
+        &lt;/tbody&gt;&lt;br /&gt;
+    &lt;/table&gt;
+</pre>
+    </div>
+</section>
+<div class="page-header">
+    <h3>Grid</h3>
+</div>
+<section id="grid">
+    <h4>Grid Container</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_grid display=""]
+        ... Grid content here
+    [/bs_grid]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Display</strong> null, fluid</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs row"&gt;
+        ... Grid content here
+    &lt;/div&gt;
+</pre>
+    </div>
+    <h4>Grid Column</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_column size=""]
+        ... Column content here
+    [/bs_column]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Size</strong> 1 to 12</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs span8"&gt;
+        ... Column content here
+    &lt;/div&gt;
+    &lt;div class="twitter_bs span4"&gt;
+        ... Column content here
+    &lt;/div&gt;
+</pre>
+    </div>
+</section>
+<div class="page-header">
+    <h3>Components</h3>
+</div>
+<section id="components">
+    <h4>Tabs</h4>
+
+    <div>
+        <p>
+            Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.
+        </p>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_tabs]
+        [bs_tab title="Home" id="home"]
+            My Home content
+        [/bs_tab]
+        [bs_tab title="Profile" id="profile" active="true"]
+            My Profile content
+        [/bs_tab]
+        [bs_tab title="Messages" id="messages"]
+            My Messages content
+        [/bs_tab]
+    [/bs_tabs]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Title</strong> User Input</li>
+            <li><strong>Id</strong> User Input</li>
+            <li><strong>Active</strong> null, true</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;ul class="twitter_bs nav nav-tabs" id=""&gt;&lt;br&gt;
+        &lt;li class=""&gt;&lt;a href="#home" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+        &lt;li class="active"&gt;&lt;a href="#profile" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+        &lt;li class=""&gt;&lt;a href="#messages" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;/ul&gt;
+    &lt;div class="twitter_bs tab-content"&gt;&lt;br&gt;
+        &lt;div class="tab-pane " id="home"&gt;&lt;br&gt;
+            My Home content&lt;br&gt;
+        &lt;/div&gt;&lt;br&gt;
+        &lt;div class="tab-pane active" id="profile"&gt;&lt;br&gt;
+            My Profile content&lt;br&gt;
+        &lt;/div&gt;&lt;br&gt;
+        &lt;div class="tab-pane " id="messages"&gt;&lt;br&gt;
+            My Messages content&lt;br&gt;
+        &lt;/div&gt;&lt;br&gt;
+    &lt;/div&gt;
+</pre>
+    </div>
+    <h4>Tooltip</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_tooltip tooltip="Tooltip content" placement="left"]Tooltip Link[/bs_tooltip]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Placement</strong> null, top, bottom, left, right</li>
+            <li><strong>Tooltip</strong> User Input</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;a href="#" class="twitter_bs bs_tooltip" data-placement="left" data-original-title="Tooltip content"&gt;Tooltip Link&lt;/a&gt;
+</pre>
+    </div>
+    <h4>PopOver</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_popover tooltip="Popover content" placement="left"]Popover Link[/bs_popover]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Placement</strong> null, top, bottom, left, right</li>
+            <li><strong>Tooltip</strong> User Input</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;a href="#" class="twitter_bs bs_popover" data-placement="left" data-original-title="Popover content"&gt;Popover Link&lt;/a&gt;
+</pre>
+    </div>
+    <h4>Accordion</h4>
+
+    <div>
+        <h5>Usage</h5>
+<pre class="prettyprint">
+    [bs_accordion id=""]
+        [bs_accordion_tab title="Collapsible Item 1"]
+            HTML/ShortCode Content for tab 1 here
+        [/bs_accordion_tab]
+        [bs_accordion_tab title="Collapsible Item 2" active="true"]
+            HTML/ShortCode Content for tab 2 here
+        [/bs_accordion_tab]
+    [/bs_accordion]
+</pre>
+        <h6>Attributes</h6>
+        <ul>
+            <li><strong>Id</strong> User Input</li>
+            <li><strong>Title</strong> User Input</li>
+            <li><strong>Active</strong> null, true</li>
+        </ul>
+        <h5>Output</h5>
+<pre class="prettyprint">
+    &lt;div class="twitter_bs accordion"&gt;
+        &lt;div class="accordion-group"&gt;
+            &lt;div class="accordion-heading"&gt;
+                &lt;a class="accordion-toggle" data-toggle="collapse" href="#zg1m2FM6NY"&gt;Collapsible Item 1&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="accordion-body collapse " id="zg1m2FM6NY"&gt;
+                &lt;div class="accordion-inner"&gt;
+                    HTML/ShortCode Content for tab 1 here
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="accordion-group"&gt;
+            &lt;div class="accordion-heading"&gt;
+                &lt;a class="accordion-toggle" data-toggle="collapse" href="#RzmHs2jbLv"&gt;Collapsible Item 2&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="accordion-body collapse in" id="RzmHs2jbLv"&gt;
+                &lt;div class="accordion-inner"&gt;
+                    HTML/ShortCode Content for tab 2 here
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+    </div>
+</section>
+<h2>About Us
+    <small>The people behind Bootstrap Press</small>
+</h2>
+<div class="page-header">
+    <h3>The Developers</h3>
+</div>
+<section id="developers">
+    <p>
+        BootstrapPress is developed and maintained by <a href="http://omarabid.com">Abid Omar</a>.
+    </p>
+</section>
+<div class="page-header">
+    <h3>Licensing</h3>
+</div>
+<section id="licensing">
+    <p>
+        BootstrapPress is licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GPLv3 License</a>. The
+        Twitter Bootstrap CSS code is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache
+        License v2.0</a>. The Apache License v2.0 is <a href="http://www.apache.org/licenses/GPL-compatibility.html">compatible</a>
+        with the GPLv3.
+    </p>
+</section>
+<div class="page-header">
+    <h3>Custom Development</h3>
+</div>
+<section id="custom_development">
+    <p>
+        We are open to custom development requests for WordPress, PHP and Front-End development (JavaScript). If you are
+        interested you can contact us: contact@omarabid.com.
+    </p>
+</section>
+</div>
+</div>
+</div>
+</body>
+</html>

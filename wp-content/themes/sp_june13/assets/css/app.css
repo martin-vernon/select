@@ -2,7 +2,7 @@
    Base
    ========================================================================== */
 
-body { }
+body { font-family: 'myriad-pro', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #333; }
 
 
 
@@ -11,8 +11,47 @@ body { }
    ========================================================================== */
 
 .banner { }
+.select-head { height: 90px; margin-top: 10px; }
+.select-head .main-phone { font-size: 21px; }
+.select-head .sub-phone, .select-head .email { font-size: 15px; line-height: 15px; margin-top: 5px; }
+.navbar-inner { background:url('../img/menu/menu_bkgd.png') top left repeat-x; border-top:1px solid #FFF; min-height:34px; height:34px; }
 
+/* ==========================================================================
+   UberMenu Custom styles
+   ========================================================================== */
 
+.navbar-inner #megaMenu, .navbar-inner #megaMenu ul.megaMenu, #megaMenu ul.sub-menu, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega { position:inherit; }
+.navbar-inner #megaMenu ul.megaMenu > li.menu-item { width:156px; border-right:1px solid #FFF; line-height:34px; }
+.navbar-inner #megaMenu ul.megaMenu > li.home-page { width:155px; }
+.navbar-inner #megaMenu ul.megaMenu > li.home-page i { font-size:22px; vertical-align:middle; }
+.navbar-inner #megaMenu ul.megaMenu > li.last-item { border-right: none; }
+.navbar-inner #megaMenu ul.megaMenu > li.menu-item > a, .navbar-inner #megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator { text-align:center; font-size:14px; font-weight:200; color:#FFF; padding:0px; }
+.navbar-inner #megaMenu ul.megaMenu > li.menu-item > a:hover, .navbar-inner #megaMenu ul.megaMenu > li.menu-item > span.um-anchoremulator:hover { background:#333; }
+.navbar-inner #megaMenu .wpmega-link-title { line-height: 34px; }
+.navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg ul.sub-menu li.menu-item.megaReg-with-sub > a, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg ul.sub-menu li.menu-item.megaReg-with-sub > span.um-anchoremulator, .navbar-inner #megaMenu ul.megaMenu li.menu-item.mega-with-sub > a, .navbar-inner #megaMenu ul.megaMenu li.menu-item.mega-with-sub > span.um-anchoremulator, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator { padding-right:0px; }
+.navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > a:after, .navbar-inner #megaMenu ul.megaMenu li.menu-item.mega-with-sub > a:after, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a:after, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-reg li.menu-item.megaReg-with-sub > span.um-anchoremulator:after, .navbar-inner #megaMenu ul.megaMenu li.menu-item.mega-with-sub > span.um-anchoremulator:after, .navbar-inner #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator:after { border-top-color: #FFF; }
+.navbar-inner #megaMenu.megaMenuHorizontal ul.megaMenu > li.menu-item > ul.sub-menu.sub-menu-1 { background:#000; height:300px; border-radius:0px; border-top:1px solid #FFF; }
+
+.navbar-inner #megaMenu .menu-tabs .row { width:100%; margin-left: -20px; }
+.navbar-inner #megaMenu .menu-tabs [class*="span"]{ margin-left:0px; }
+.navbar-inner #megaMenu .menu-tabs [class*="span"]:first-child { margin-left:20px; }
+
+.navbar-inner #megaMenu .menu-tabs .span4 { width: 306px; }
+.navbar-inner #megaMenu .menu-tabs .span6 { width: 460px; }
+.navbar-inner #megaMenu .menu-tabs h2 { margin-top:0px; border-top:1px solid #666; border-bottom:1px solid #666; padding-right:20px; }
+.navbar-inner #megaMenu .menu-tabs h2>a { font-size:14px; font-weight:200; color:#666; text-decoration:none; }
+.navbar-inner #megaMenu .menu-tabs h2>a:hover, .navbar-inner #megaMenu .menu-tabs h2>a.hovered { color:#FFF; }
+.navbar-inner #megaMenu .menu-tabs img { padding-top: 30px; }
+
+.navbar-inner #megaMenu .menu-tabs { color:#FFF; margin:30px auto 0 auto; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs { width:170px; border-right:none; padding-right: 20px; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li { width:100%; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li { border-top: 1px solid #666666; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li:last-child { border-bottom:1px solid #666666; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li.active>a, .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li>a, .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li>a:hover { border:none; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; text-shadow:none; color:#666; font-size:14px; font-weight:200; padding: 9px 0; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li>a:hover { color:#FFF; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs li.active>a { color:#FFF; font-weight:400; }
+.navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 { width:180px; }
 
 /* ==========================================================================
    Content
@@ -74,8 +113,80 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
+/* Large desktop */
+@media (min-width: 1200px) {  
+    
+    /* ==========================================================================
+       UberMenu Custom styles
+       ========================================================================== */
+    .navbar-inner #megaMenu ul.megaMenu { max-width:1170px; }
+    
+    .navbar-inner #megaMenu ul.megaMenu > li.menu-item { width:200px; }
+    .navbar-inner #megaMenu ul.megaMenu > li.home-page { width:155px; }
+    
+    .navbar-inner #megaMenu .menu-tabs .row { margin-left:-30px; }
+    .navbar-inner #megaMenu .menu-tabs [class*="span"]:first-child { margin-left:30px; }
+    .navbar-inner #megaMenu .menu-tabs .span4 { width: 380px; }
+    .navbar-inner #megaMenu .menu-tabs .span6 { width: 570px; }
+    
+    .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs { width:200px; padding-right:70px; }
+    .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 { width:215px; }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .navbar .container { width:724px; } 
+    
+    /* ==========================================================================
+       UberMenu Custom styles
+       ========================================================================== */    
+    .navbar-inner #megaMenu ul.megaMenu > li.menu-item { width:135px; }
+    .navbar-inner #megaMenu ul.megaMenu > li.home-page { width:48px; }
+    
+    .navbar-inner #megaMenu .menu-tabs .span4 { width: 234px; }
+    .navbar-inner #megaMenu .menu-tabs .span4 img { width: 224px; }
+    .navbar-inner #megaMenu .menu-tabs .span6 { width: 351px; }
+    
+    .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs { width:130px; padding-right:20px; }
+    .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 { width:135px; }
+    .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 img { width:130px; }
+}
+ 
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    .navbar-inner { padding-right:0px; padding-left:0px; }
+    .navbar-inner #megaMenu #megaMenuToggle { padding: 10px 15px; color:#FFF; font-size:14px; }
+    .navbar-inner #megaMenu .megaMenu { background:#000; }
+    .navbar-inner #megaMenu ul.megaMenu > li.menu-item { border-right:none; }
+    .navbar-inner #megaMenu.megaMenuHorizontal ul.megaMenu > li.menu-item > ul.sub-menu.sub-menu-1 { height:auto; }
+    
+    .navbar-inner #megaMenu .menu-tabs { margin:0 auto 0 auto; }
+    .navbar-inner #megaMenu .menu-tabs .span4, .navbar-inner #megaMenu .menu-tabs .span6 { margin-left:20px; margin-bottom:20px; width:inherit; }
+    .navbar-inner #megaMenu .menu-tabs h2 { float:left; width:145px; }
+    .navbar-inner #megaMenu .menu-tabs h2 a { text-align:left; }
+    .navbar-inner #megaMenu .menu-tabs a { text-align:right; }
+    .navbar-inner #megaMenu .menu-tabs img { padding-top:0px; }
+    
+    .navbar-inner #megaMenu .menu-tabs.visible-phone .span2 { margin-left:0px; float:left; width:170px; }
+    .navbar-inner #megaMenu .menu-tabs.visible-phone .span2>h2 { width:150px; font-size:14px; font-weight:200; color:#666; }
+    .navbar-inner #megaMenu .menu-tabs.visible-phone .span2 img { float:left; margin-bottom:10px; }
+    .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4 { width:380px; float:right; }
+    .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4>.row>.span2{ margin-left:20px; }
+}
 
+/* Custom Ubermenu width for floated developments */
+@media (max-width: 647px){
+    .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4 { max-width:170px; float:right; }
+}
+
+/* Landscape phones and down */
+@media (max-width: 479px) { 
+    .navbar-inner #megaMenu .menu-tabs h2 { width:100%; }
+    .navbar-inner #megaMenu .menu-tabs h2 a, .navbar-inner #megaMenu .menu-tabs a { text-align:center; }
+    .navbar-inner #megaMenu .menu-tabs img { padding-top:0px; }
+    
+    .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span2, .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span2>h2 { width:85px; }
+    .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4 { max-width:130px; float:right; }
 }
 
 /* ==========================================================================
