@@ -3,9 +3,9 @@
       <div class="select-head row">
         <div class="span3"><img src="<?= get_stylesheet_directory_uri();?>/assets/img/select-logo.png" alt="Select Property Ltd"/></div>
         <div class="span5 offset4 text-right">
-          <div class="main-phone">UK: +44 (0)161 322 2222</div>
-          <div class="sub-phone">DXB: +971 44462756</div>
-          <div class="email">E. <a href="mailto:info@selectproperty.com" onclick="_gaq.push(['_trackEvent', 'Header Email', GB]);">info@selectproperty.com</a></div>
+          <div class="main-phone"><?= $_SESSION['company']['head-phone']; ?></div>
+          <div class="sub-phone"><?= $_SESSION['company']['head-phone-2']; ?></div>
+          <div class="email">E. <a href="mailto:<?= $_SESSION['company']['email']; ?>" onclick="_gaq.push(['_trackEvent', 'Header Email', '<?= $_SESSION['company']['territory']; ?>']);"><?= $_SESSION['company']['email']; ?></a></div>
         </div>
       </div>
   </div>

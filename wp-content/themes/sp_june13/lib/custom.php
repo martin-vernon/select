@@ -1,6 +1,8 @@
 <?php
-    include('form_insert.php');
+    include('includes/tgm_plugin_activation.php');
+    include('includes/form_insert.php');
     
+    // add Typekit font for Myriad Pro
     function add_typekit() {
         echo '<script type="text/javascript" src="//use.typekit.net/rhk6igh.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
     }
@@ -9,28 +11,51 @@
     // remove menu walker filter for UberMenu plugin
     remove_filter('nav_menu_css_class', 'roots_nav_menu_css_class', 10, 2);
     
+    // add Font Awesome for extra font icons 
     function add_font_awesome() {
         wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
         wp_enqueue_style('font-awesome');
     }
     add_action('wp_head', 'add_font_awesome');
     
-    function get_country(){
-        if (!isset($country)) {
-
-            $countryapi = '7ce2631969111ddcbfbbf67453338440fd1aed570febfbbcffb5e5a1ec1eae89';
-
-            $responseuri = 'http://api.ipinfodb.com/v3/ip-country/?key='.$countryapi.'&ip='.$_SERVER['REMOTE_ADDR'].'';
-
-            $str_response_xml = @file_get_contents($responseuri);
-            $location = filter_var($str_response_xml, FILTER_SANITIZE_STRING);
-
-            $locationarray = str_word_count($location , 1);
-
-            $country = $locationarray[1];
-
-        }
-
-        return $country;
+    // set additional widget areas for theme
+    function set_select_sidebars(){
+        register_sidebar(array(
+            'name'          => __('Footer Right', 'roots'),
+            'id'            => 'sidebar-footer-1',
+            'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+            'after_widget'  => '</div></section>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        ));
     }
+    add_action('widgets_init', 'set_select_sidebars');
+    
+    // set Site contact details, switched per territory, using company Session variable to be used anywhere on site.
+    function set_address() {
+        session_start();
+        
+        switch ( site_url() ) {
+            case 'http://www.selectproperty.ae':
+                $_SESSION['company'] = array(
+                    'territory'    => 'UAE',
+                    'address'      => 'Office 803, Concord Tower, Tecom Dubai Media City, Dubai, United Arab Emirates.',
+                    'email'        => 'info@selectproperty.ae',
+                    'phone'        => '+971 44462756',
+                    'head-phone'   => 'DXB: +971 44462756',
+                    'head-phone-2' => 'UK: +44 (0)161 322 2222'
+                );
+                break;
+            default:
+                $_SESSION['company'] = array(
+                    'territory'    => 'UK',
+                    'address'      => 'The Box, Brooke Court, Lower Meadow Road, Handforth, Wilmslow, Cheshire, SK9 3ND. United Kingdom.',
+                    'email'        => 'info@selectproperty.com',
+                    'phone'        => '+44(0) 161 322 2222',
+                    'head-phone'   => 'UK: +44 (0)161 322 2222',
+                    'head-phone-2' => 'DXB: +971 44462756'
+                );
+        }
+    }
+    add_action('init', 'set_address');
 ?>
