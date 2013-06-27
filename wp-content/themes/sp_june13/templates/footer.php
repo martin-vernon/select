@@ -9,11 +9,13 @@
           </div>
       </div>
       <div class="row">
-          <div id="base" class="span12">
-            <span class="territory">&copy;. <?= date('Y'); ?> <?php bloginfo('name'); ?> <?= $_SESSION['company']['territory']; ?>&nbsp;|</span>
-            <span class="address"><?= $_SESSION['company']['address']; ?></span>&nbsp;|
-            <span class="tel"><?= $_SESSION['company']['phone']; ?></span>&nbsp;|
-            <span class="email"><a class="email" href="mailto:<?= $_SESSION['company']['email']; ?>"><?= $_SESSION['company']['email']; ?></a></span>
+          <div class="span12">
+              <div class="base">
+                <span class="territory">&copy; <?= date('Y'); ?>. <?php bloginfo('name'); ?> <?= $_SESSION['company']['territory']; ?>&nbsp;|</span>
+                <span class="address"><?= $_SESSION['company']['address']; ?></span>&nbsp;|
+                <span class="tel"><?= $_SESSION['company']['phone']; ?></span>&nbsp;|
+                <span class="email"><a class="email" href="mailto:<?= $_SESSION['company']['email']; ?>"><?= $_SESSION['company']['email']; ?></a></span>
+              </div>    
           </div>
       </div>
       <div class="row">

@@ -58,4 +58,16 @@
         }
     }
     add_action('init', 'set_address');
+    
+    function get_select_social($atts,$content){
+        return '<div id="social">
+            <div class="social_title">Find and Follow us on</div>
+            <a class="social twitter" href="https://twitter.com/OSelectProperty" title="Select Property on Twitter"></a>
+            <a class="social facebook" href="https://www.facebook.com/selectpropertyltd" title="Select Property on Facebook"></a>
+            <!--<a class="social vimeo" href="vimeo" title="Select Property on Vimeo"></a>-->
+            <a class="social flickr" href="http://www.flickr.com/photos/selectproperty/" title="Select Property on Flickr"></a>
+            <a class="social googleplus" href="https://plus.google.com/113680179819262532447" title="Select Property on Google Plus"></a>
+        </div>';
+    }
+    add_shortcode('select_social', 'get_select_social');
 ?>

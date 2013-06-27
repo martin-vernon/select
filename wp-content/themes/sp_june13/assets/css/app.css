@@ -60,7 +60,6 @@ body { font-family: 'myriad-pro', Helvetica, Arial, sans-serif; font-size: 13px;
 .content { }
 
 
-
 /* ==========================================================================
    Primary Content
    ========================================================================== */
@@ -93,10 +92,26 @@ body { font-family: 'myriad-pro', Helvetica, Arial, sans-serif; font-size: 13px;
    Footer
    ========================================================================== */
 
-.content-info { }
+footer { font-size:12px; }
+/* footer background image */
+footer .container { background:url('../img/footer/footer_bkgd.jpg') center top no-repeat; }
 
+/* footer custom menu styles */
+footer .base { background:#000 url('../img/footer/footer_logo.jpg') 25px center no-repeat; color:#FFF; font-size:11px; line-height:13px; height:32px; padding:20px 0 0 60px; }
+footer #menu-footer-menu, footer #menu-footer-menu>li>.sub-menu { list-style:none; margin:0; padding:0; }
+footer #menu-footer-menu>li { float:left; margin:15px 0 10px 20px; }
+footer #menu-footer-menu>li>a { color:#FFF; }
+footer #menu-footer-menu>li>.sub-menu>li>a { color:#999; }
 
+/* footer searchform.php styles */
+footer .form-search { padding:30px 0 0 5px; }
+footer .form-search label { color:#FFF; font-size:13px; }
+footer input.search-query { -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; width: 170px; height: 22px; font-size:12px; padding:0 5px; }
+footer .form-search .blue_button { padding:2px 14px; text-transform:uppercase; font-weight:normal; }
 
+/* footer social icons */
+#social { height: 50px; width: 285px; padding: 20px 0 0 0; }
+#social .social_title { color:#FFF; padding:0px; font-size:13px; }
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -107,6 +122,54 @@ body { font-family: 'myriad-pro', Helvetica, Arial, sans-serif; font-size: 13px;
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
+
+/* ==========================================================================
+   Select Property Social icons
+   ========================================================================== */
+
+#social .social_title { padding: 0 0 0 5px; }
+#social a.social { width: 34px; height: 34px; float: left; margin: 5px; }
+#social a.twitter { background: url('../img/social/twitter.png') 0px 0px no-repeat; }
+#social a.facebook { background: url('../img/social/facebook.png') 0px 0px no-repeat; }
+#social a.vimeo { background: url('../img/social/vimeo.png') 0px 0px no-repeat; }
+#social a.flickr { background: url('../img/social/flickr.png') 0px 0px no-repeat; }
+#social a.googleplus { background: url('../img/social/googleplus.png') 0px 0px no-repeat; }
+#social a.social:hover { background-position: 0px -39px; }
+
+/* ==========================================================================
+   CSS 3 Button styles
+   ========================================================================== */
+
+.blue_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+        text-transform:uppercase;
+	text-shadow:1px 1px 0px #1570cd;
+        -moz-border-radius:0px;
+        -webkit-border-radius:0px;
+        border-radius:0px;
+}.blue_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+}.blue_button:active {
+	position:relative;
+	top:1px;
+}
 
 
 /* ==========================================================================
@@ -134,12 +197,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-    .navbar .container { width:724px; } 
+@media (min-width: 768px) and (max-width: 979px) {  
     
     /* ==========================================================================
        UberMenu Custom styles
        ========================================================================== */    
+    .navbar .container { width:724px; }
     .navbar-inner #megaMenu ul.megaMenu > li.menu-item { width:135px; }
     .navbar-inner #megaMenu ul.megaMenu > li.home-page { width:48px; }
     
@@ -154,6 +217,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    
+    /* ==========================================================================
+       UberMenu Custom styles
+       ========================================================================== */
     .navbar-inner { padding-right:0px; padding-left:0px; }
     .navbar-inner #megaMenu #megaMenuToggle { padding: 10px 15px; color:#FFF; font-size:14px; }
     .navbar-inner #megaMenu .megaMenu { background:#000; }
@@ -181,6 +248,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Landscape phones and down */
 @media (max-width: 479px) { 
+    
+    /* ==========================================================================
+       UberMenu Custom styles
+       ========================================================================== */
     .navbar-inner #megaMenu .menu-tabs h2 { width:100%; }
     .navbar-inner #megaMenu .menu-tabs h2 a, .navbar-inner #megaMenu .menu-tabs a { text-align:center; }
     .navbar-inner #megaMenu .menu-tabs img { padding-top:0px; }
