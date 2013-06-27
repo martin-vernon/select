@@ -110,8 +110,11 @@ footer input.search-query { -webkit-border-radius:0px; -moz-border-radius:0px; b
 footer .form-search .blue_button { padding:2px 14px; text-transform:uppercase; font-weight:normal; }
 
 /* footer social icons */
-#social { height: 50px; width: 285px; padding: 20px 0 0 0; }
-#social .social_title { color:#FFF; padding:0px; font-size:13px; }
+footer #social { height: 50px; width: 285px; padding: 20px 0 0 0; }
+footer #social .social_title { color:#FFF; padding:0px; font-size:13px; }
+
+/* footer base shadow image */
+footer .baseshadow { background:url('../img/footer/footer_shadow.png') center 2px no-repeat; }
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes

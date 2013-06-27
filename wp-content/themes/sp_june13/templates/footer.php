@@ -19,7 +19,7 @@
           </div>
       </div>
       <div class="row">
-          <div id="baseshadow" class="span12">&nbsp;</div>
+          <div class="span12 baseshadow">&nbsp;</div>
       </div>
   </div>
 </footer>
