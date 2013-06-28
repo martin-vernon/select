@@ -97,7 +97,7 @@ footer { font-size:12px; }
 footer .container { background:url('../img/footer/footer_bkgd.jpg') center top no-repeat; }
 
 /* footer custom menu styles */
-footer .base { background:#000 url('../img/footer/footer_logo.jpg') 25px center no-repeat; color:#FFF; font-size:11px; line-height:13px; height:32px; padding:20px 0 0 60px; }
+footer .base { background:#000 url('../img/footer/footer_logo.jpg') 25px center no-repeat; color:#FFF; font-size:11px; line-height:13px; height:32px; padding:9px 210px 0 60px; }
 footer #menu-footer-menu, footer #menu-footer-menu>li>.sub-menu { list-style:none; margin:0; padding:0; }
 footer #menu-footer-menu>li { float:left; margin:15px 0 10px 20px; }
 footer #menu-footer-menu>li>a { color:#FFF; }
@@ -106,12 +106,12 @@ footer #menu-footer-menu>li>.sub-menu>li>a { color:#999; }
 /* footer searchform.php styles */
 footer .form-search { padding:30px 0 0 5px; }
 footer .form-search label { color:#FFF; font-size:13px; }
-footer input.search-query { -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; width: 170px; height: 22px; font-size:12px; padding:0 5px; }
-footer .form-search .blue_button { padding:2px 14px; text-transform:uppercase; font-weight:normal; }
+footer input.search-query { -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; width: 170px; height: 22px; font-size:12px; padding:0 5px; margin-right:5px; }
+footer .form-search .blue_button { padding:2px 14px 1px 14px; text-transform:uppercase; font-weight:normal; }
 
 /* footer social icons */
-footer #social { height: 50px; width: 285px; padding: 20px 0 0 0; }
-footer #social .social_title { color:#FFF; padding:0px; font-size:13px; }
+footer #social { padding:20px 0 10px 0; }
+footer #social .social_title { color:#FFF; font-size:13px; }
 
 /* footer base shadow image */
 footer .baseshadow { background:url('../img/footer/footer_shadow.png') center 2px no-repeat; }
@@ -143,36 +143,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    CSS 3 Button styles
    ========================================================================== */
 
-.blue_button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
-	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
-	background-color:#3d94f6;
-	border:1px solid #337fed;
-	display:inline-block;
-	color:#ffffff;
-	font-family:arial;
-	font-size:12px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-        text-transform:uppercase;
-	text-shadow:1px 1px 0px #1570cd;
-        -moz-border-radius:0px;
-        -webkit-border-radius:0px;
-        border-radius:0px;
-}.blue_button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
-	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
-	background-color:#1e62d0;
-}.blue_button:active {
-	position:relative;
-	top:1px;
-}
+.blue_button{-moz-box-shadow:inset 0 1px 0 0 #97c4fe;-webkit-box-shadow:inset 0 1px 0 0 #97c4fe;box-shadow:inset 0 1px 0 0 #97c4fe;background:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',endColorstr='#1e62d0');background-color:#3d94f6;border:1px solid #337fed;display:inline-block;color:#fff;font-family:arial;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;text-shadow:1px 1px 0 #1570cd;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;padding:6px 24px;} 
+.blue_button:hover{background:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',endColorstr='#3d94f6');background-color:#1e62d0;} 
+.blue_button:active{position:relative;top:1px;}
 
 
 /* ==========================================================================
@@ -197,6 +170,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     
     .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs { width:200px; padding-right:70px; }
     .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 { width:215px; }
+    
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    footer #menu-footer-menu>li { margin:15px 0 10px 50px; }
+    footer .base { padding:20px 0 0 60px; }
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -216,10 +195,19 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     .navbar-inner #megaMenu .menu-tabs .tabs-left>.nav-tabs { width:130px; padding-right:20px; }
     .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 { width:135px; }
     .navbar-inner #megaMenu .menu-tabs .tabs-left>.tab-content>.tab-pane .row .span2 img { width:130px; }
+    
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    footer input.search-query { width:110px; }
+    footer .base { padding-top:9px; padding-right:60px; }
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    body { padding:0; }
+    .banner { margin:0; }
+    .container{ padding: 0 20px; }
     
     /* ==========================================================================
        UberMenu Custom styles
@@ -242,6 +230,14 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     .navbar-inner #megaMenu .menu-tabs.visible-phone .span2 img { float:left; margin-bottom:10px; }
     .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4 { width:380px; float:right; }
     .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4>.row>.span2{ margin-left:20px; }
+    
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    footer .base { padding-top:20px; padding-right:10px; }
+    footer .container { padding:0px; }
+    footer .widget { padding:0 20px; }
+    footer .form-search label { display:block; }
 }
 
 /* Custom Ubermenu width for floated developments */
@@ -261,6 +257,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     
     .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span2, .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span2>h2 { width:85px; }
     .navbar-inner #megaMenu .menu-tabs.visible-phone>.row>.span4 { max-width:130px; float:right; }
+    
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    footer .base { padding-top:9px; }
 }
 
 /* ==========================================================================

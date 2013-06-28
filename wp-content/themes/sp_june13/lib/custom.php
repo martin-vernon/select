@@ -60,7 +60,7 @@
     add_action('init', 'set_address');
     
     function get_select_social($atts,$content){
-        return '<div id="social">
+        return '<div id="social" class="clearfix">
             <div class="social_title">Find and Follow us on</div>
             <a class="social twitter" href="https://twitter.com/OSelectProperty" title="Select Property on Twitter"></a>
             <a class="social facebook" href="https://www.facebook.com/selectpropertyltd" title="Select Property on Facebook"></a>
